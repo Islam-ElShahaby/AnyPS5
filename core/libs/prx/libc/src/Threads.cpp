@@ -403,7 +403,7 @@ static_assert(offsetof(GuestPad, condition) == 0x8 && offsetof(GuestPad, mutex) 
 
 [[noreturn]] void ThrowCppError_nid_no_patch(int code);
 
-[[noreturn]] void APS5_VABI _ZSt14_Throw_C_errori_nid_postfix(int code);
+void APS5_VABI _ZSt14_Throw_C_errori_nid_postfix(int code);
 
 static void RequireThrd(int result) {
     if (result != threadSuccess) _ZSt14_Throw_C_errori_nid_postfix(result);
